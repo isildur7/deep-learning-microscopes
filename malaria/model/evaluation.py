@@ -4,7 +4,8 @@ Created on Thu Nov 15 17:17:27 2018
 
 @author: Amey Chaware
 
-Tensorflow utility functions for evaluation"""
+Tensorflow utility functions for evaluation
+"""
 
 import logging
 import os
