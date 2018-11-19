@@ -4,7 +4,8 @@ Created on Thu Nov 15 18:02:31 2018
 
 @author: Amey Chaware
 
-Train the model"""
+Train the model
+"""
 #%%
 import argparse
 import logging
@@ -39,20 +40,12 @@ if __name__ == '__main__':
     assert os.path.isfile(json_path), "No json configuration file found at {}".format(json_path)
     params = Params(json_path)
 #%%
-    # Check that we are not overwriting some previous experiment
-    # Comment these lines if you are developing your model and don't care about overwritting
-    #model_dir_has_best_weights = os.path.isdir(os.path.join(args.model_dir, "best_weights"))
-    #overwritting = model_dir_has_best_weights and args.restore_from is None
-    #assert not overwritting, "Weights found in model_dir, aborting to avoid overwrite"
-
     # Set the logger
     set_logger(os.path.join(args.model_dir, 'train.log'))
 
     # Create the input data pipeline
     logging.info("Creating the datasets...")
     data_dir = args.data_dir
-    #train_data_dir = os.path.join(data_dir, "train_signs")
-    #dev_data_dir = os.path.join(data_dir, "dev_signs")
     
     # Create the two iterators over the two datasets
     data = load_data_malaria(data_dir, params)
