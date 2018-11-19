@@ -4,7 +4,8 @@ Created on Thu Nov 15 17:38:40 2018
 
 @author: Amey Chaware
 
-Tensorflow utility functions for training"""
+Tensorflow utility functions for training
+"""
 
 import logging
 import os
