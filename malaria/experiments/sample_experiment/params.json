@@ -1,0 +1,16 @@
+{
+
+    "learning_rate": 1e-3,
+    "batch_size": 32,
+    "num_epochs": 10,
+    "numsuper": 8,
+    "num_channels": 16,
+    "bn_momentum": 0.9,
+
+    "image_size": 28,
+    "split": 0.75,
+    "num_labels": 2,
+
+    "number": 12800,
+    "save_summary_steps": 4
+}
