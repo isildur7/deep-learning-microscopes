@@ -44,13 +44,6 @@ if __name__ == '__main__':
     # Create the input data pipeline
     logging.info("Creating the dataset...")
     data_dir = args.data_dir
-    #test_data_dir = os.path.join(data_dir, "test_signs")
-
-#    # Get the filenames from the test set
-#    test_filenames = os.listdir(test_data_dir)
-#    test_filenames = [os.path.join(test_data_dir, f) for f in test_filenames if f.endswith('.jpg')]
-
-    #test_labels = [int(f.split('/')[-1][0]) for f in test_filenames]
 
     # create the iterator over the dataset
     data = load_data_malaria(data_dir, params)
