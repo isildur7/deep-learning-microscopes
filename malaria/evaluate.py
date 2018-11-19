@@ -4,7 +4,8 @@ Created on Thu Nov 15 17:45:02 2018
 
 @author: Amey Chaware
 
-Evaluate the model"""
+Evaluate the model
+"""
 
 import argparse
 import logging
